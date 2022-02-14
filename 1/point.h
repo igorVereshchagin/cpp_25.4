@@ -22,5 +22,6 @@ void output(const point_t &pt)
 
 void input(point_t &pt)
 {
-
+  std::cout << "Input coordinates of point: ";
+  std::cin >> pt.x >> pt.y;
 }

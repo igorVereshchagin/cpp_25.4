@@ -1,26 +1,34 @@
 #pragma once
 #include "point.h"
 
-void scalpel(const point_t &start, const point_t &finish)
+void scalpel(const point_t &begin, const point_t &end)
 {
   std::cout << "Cut from ";
-  output(start);
+  output(begin);
   std::cout << " till ";
-  output(finish);
+  output(end);
   std::cout << std::endl;
 }
 
 void hemostat(const point_t &pt)
 {
-
+  std::cout << "Hemostat at ";
+  output(pt);
+  std::cout << std::endl;
 }
 
 void tweezers(const point_t &pt)
 {
-
+  std::cout << "Pinch at ";
+  output(pt);
+  std::cout << std::endl;
 }
 
-void suture(const point_t &start, const point_t &finish)
+void suture(const point_t &begin, const point_t &end)
 {
-
+  std::cout << "Suture from ";
+  output(begin);
+  std::cout << " till ";
+  output(end);
+  std::cout << std::endl;
 }
